@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Expletus Sans", cursive;
+}
+
+html {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  padding: 5rem;
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container3 {
+  width: 90%;
+
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-brand h1 {
+  width: 2rem;
+  font-family: "Monoton", cursive;
+  color: #fff;
+}
+
+.menu-icons i {
+  font-size: 3.5rem;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+.close i {
+  color: #eb648c;
+}
+
+.nav-list {
+  width: 25rem;
+  height: 100vh;
+  background-color: #d7d4ed;
+  position: fixed;
+  top: 0;
+  right: -26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  transition: all 650ms ease-in-out;
+}
+
+.nav-list .active {
+  right: 0;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+}
+
+.nav-item {
+  margin: 1.5rem 0;
+}
+
+nav-link {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      135deg,
+      rgba(121, 9, 83, 0.9) 0%,
+      rgba(7, 83, 134, 0.8) 100%
+    ),
+    url("img/cyberpunk.gif") center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4.7rem;
+  width: 100%;
+  background: url() center no-repeat;
+  background-size: cover;
+}
+
+.text {
+  color: #fff;
+  text-align: center;
+  margin-top: 20rem;
+  font-size: 5.5rem;
+}
+
+.text h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.text2 h2 {
+  color: rgba(7, 83, 134, 0.8);
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.text2 h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.text2 p {
+  font-size: 2.5rem;
+}
+
+.btn {
+  font-size: 2rem;
+  background-color: #eb648c;
+  border-radius: 2rem;
+  padding: 1rem 2.5rem;
+}
+
+.btn:hover {
+  background-color: #ce587b;
+}
+
+#skills {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(
+      135deg,
+      rgba(121, 9, 83, 0.5) 0%,
+      rgba(7, 83, 134, 0.8) 100%
+    ),
+    url("img/tokyo-cyberpunk.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#skills h2 {
+  color: #fafafa;
+}
+
+#skills li {
+  display: inline-block;
+  margin-right: 40px;
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+
+#skills li:hover {
+  transform: scale(0.5) translateY(-15px);
+}
+
+#contact {
+  width: 100%;
+  height: 110vh;
+  background: linear-gradient(
+      135deg,
+      rgba(121, 9, 83, 0.5) 0%,
+      rgba(7, 83, 134, 0.8) 100%
+    ),
+    url("img/purplereign.gif") center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#contact h2 {
+  color: #fafafa;
+}
+
+.card {
+  margin: 7rem;
+  text-align: center;
+  background-color: #fff;
+  opacity: 0.8;
+  z-index: 15;
+  transform-style: preserve-3d;
+  min-height: 50vh;
+  width: 25rem;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+  box-shadow: 0 20px 20px rgb(12, 61, 80), 0px 0px 50px rgb(12, 61, 80);
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  margin: 5rem 10rem;
+  text-align: center;
+  background-color: #fff;
+  opacity: 0.8;
+  z-index: 15;
+  transform-style: preserve-3d;
+  min-height: 30vh;
+  width: 25rem;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+  box-shadow: 0 20px 20px rgb(12, 61, 80), 0px 0px 50px rgb(12, 61, 80);
+}
+
+.card1 {
+  background: url(img/robinhood-email.png) center no-repeat;
+  background-size: cover;
+}
+
+.card2 {
+  background: url(img/gents.png) center no-repeat;
+  background-size: cover;
+}
+
+.info {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  color: rgba(7, 83, 134, 0.8);
+}
+
+.icon img {
+  margin-top: 6rem;
+}
+
+.form-group {
+  width: 100%;
+  margin: 0.5rem;
+  font-size: 2rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  color: rgba(7, 83, 134, 0.8);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(214, 226, 236);
+}
+
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+#status.success {
+  font-size: 1.5rem;
+  background-color: rgba(230, 15, 158, 0.9);
+  animation: status 4s ease forwards;
+}
+
+#status.error {
+  font-size: 1.5rem;
+  background-color: rgba(230, 15, 69, 0.9);
+  color: white;
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+footer {
+  padding: 2.5rem 0;
+  background-color: #d7d4ed;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+/*Media queries*/
+@media screen and (min-width: 700px) {
+  header {
+    height: 8rem;
+  }
+
+  .nav-list {
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    position: initial;
+    top: initial;
+    right: initial;
+    flex-direction: row;
+    transition: initial;
+  }
+
+  .menu-icons {
+    display: none;
+  }
+
+  .nav-item {
+    margin: 0 2.5rem;
+  }
+
+  .nav-link,
+  .current {
+    color: #fff;
+    position: relative;
+    font-size: 1.3rem;
+  }
+
+  .nav-link::before,
+  .current::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    background-color: #eb648c;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 650ms;
+  }
+
+  .current::before {
+    transform: scaleX(1);
+  }
+
+  .nav-link:hover::before {
+    transform: scaleX(1);
+  }
+}
