@@ -264,6 +264,11 @@ nav-link {
   background-size: cover;
 }
 
+.card4 {
+  background: url(img/LP3.png) center no-repeat;
+  background-size: cover;
+}
+
 .info {
   font-size: 2rem;
   padding: 1.5rem 0;
