@@ -360,6 +360,15 @@ footer {
   text-align: center;
 }
 
+.topbtn {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 40px;
+  right: 50px;
+  border-radius: 50%;
+}
+
 /*Media queries*/
 @media screen and (min-width: 700px) {
   header {
