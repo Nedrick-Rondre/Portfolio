@@ -91,7 +91,7 @@ nav {
   transition: all 650ms ease-in-out;
 }
 
-.nav-list .active {
+.nav-list.active {
   right: 0;
 }
 
@@ -105,7 +105,7 @@ nav {
   margin: 1.5rem 0;
 }
 
-nav-link {
+.nav-link {
   font-size: 1.6rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.7);
