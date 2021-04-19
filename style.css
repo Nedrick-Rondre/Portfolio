@@ -201,9 +201,6 @@ nav {
   transform: scale(0.5) translateY(-15px);
 }
 
-#skills .icon {
-  width: 100px;
-}
 
 #contact {
   width: 100%;
@@ -426,5 +423,11 @@ footer {
 
   .nav-link:hover::before {
     transform: scaleX(1);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #skills .icon {
+    width: 100px;
   }
 }
