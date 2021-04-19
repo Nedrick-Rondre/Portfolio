@@ -201,6 +201,10 @@ nav {
   transform: scale(0.5) translateY(-15px);
 }
 
+#skills .icon {
+  width: 100px;
+}
+
 #contact {
   width: 100%;
   height: 110vh;
