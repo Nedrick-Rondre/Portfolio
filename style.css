@@ -437,3 +437,9 @@ footer {
     width: 100px;
   }
 }
+
+@media screen and (max-width: 412px) {
+  #skills .icon {
+    width: 80px;
+  }
+}
